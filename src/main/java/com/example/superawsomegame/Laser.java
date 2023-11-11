@@ -9,6 +9,7 @@ public class Laser extends Taz{
         this.addPoint(0,0);
         this.addPoint(0,h);
         this.decel=1;
+        this.color="teal";
     }
     @Override
     public void toDo(){

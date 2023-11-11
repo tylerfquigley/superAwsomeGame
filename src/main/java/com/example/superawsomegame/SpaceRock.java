@@ -8,6 +8,7 @@ public class SpaceRock extends Taz{
         this.id=1;
         speed=2;
         this.scalar=scalar;
+        this.color="red";
        addPoint(0*scalar,10*scalar);
        addPoint(20*scalar,0*scalar);
        addPoint(50*scalar,10*scalar);

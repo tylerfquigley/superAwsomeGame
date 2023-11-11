@@ -68,7 +68,7 @@ private ArrayList<Cord> points;
           xPoints[i]=x1+x;
           yPoints[i]=y1+y;
       }
-        gc.setStroke(Paint.valueOf("white"));
+        gc.setStroke(Paint.valueOf(color));
         gc.strokePolygon(xPoints,yPoints, points.size());
     }
     public void addPoint(double x,double y){
