@@ -19,6 +19,12 @@ public class SolidObject extends GameObject{
             gc.setStroke(Paint.valueOf("white"));
             gc.strokeRect(x1,y1,x2,y2);
     }
+
+    @Override
+    protected void onDelete() {
+
+    }
+
     SolidObject(double x, double y, double w, double h){
         this.x=x;
         this.y=y;

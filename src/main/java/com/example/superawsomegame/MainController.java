@@ -60,6 +60,7 @@ private AnimationTimer animationTimer;
                     for (GameObject gameObject : world.gameObjects) {
                         gameObject.toDo();
                         if (gameObject.delete){
+                            gameObject.onDelete();
                             world.gameObjects.remove(gameObject);
                         }
 

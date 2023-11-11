@@ -25,13 +25,8 @@ public class Main extends Application {
         s.addPoint(12.5,25);
         mainController.world.addGameObject(s);
         s.bindToScene(scene);
-        SpaceRock rock1 = new SpaceRock(250,250,50,50);
-        rock1.addPoint(0,10);
-        rock1.addPoint(20,0);
-        rock1.addPoint(50,10);
-        rock1.addPoint(45,25);
-        rock1.addPoint(25,45);
-        rock1.addPoint(0,50);
+        SpaceRock rock1 = new SpaceRock(250,250,50,50,1);
+
         mainController.world.addGameObject(rock1);
         stage.setOnCloseRequest(windowEvent -> {
 mainController.endProgram();

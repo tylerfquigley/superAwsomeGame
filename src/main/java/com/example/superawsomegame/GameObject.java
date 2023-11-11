@@ -14,4 +14,6 @@ public abstract class GameObject {
 
     protected abstract void render(GraphicsContext gc);
 
+    protected abstract void onDelete();
+
 }
