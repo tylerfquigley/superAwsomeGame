@@ -27,4 +27,8 @@ public class World{
 protected int getFrameRate(){
         return this.frameRate;
 }
+protected void reset(){
+gameObjects.clear();
+Main.startLevel();
+}
 }

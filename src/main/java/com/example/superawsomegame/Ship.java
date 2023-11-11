@@ -3,10 +3,12 @@ package com.example.superawsomegame;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
 
+import java.util.ArrayList;
+
 public class Ship extends Taz implements Controllable{
     private boolean shoot=false;
     private int timer=0;
-    Ship(int x, int y, int w, int h) {
+    Ship(double x, double y, double w, double h) {
         super(x, y, w, h);
         this.color="green";
     }
@@ -60,6 +62,15 @@ public class Ship extends Taz implements Controllable{
             if (runTimer()){
             Main.mainController.world.addGameObject(new Laser(x+width/2,y+height/2,10,20,this.rotation));
             timer=100;
+            }
+        }
+        ArrayList<GameObject> gameObjects = Main.mainController.world.gameObjects;
+        for (int i=0;i<gameObjects.size();i++){
+            if (Collision.object_collision(this,gameObjects.get(i),0,0)){
+
+                if  (gameObjects.get(i).id==1){
+                    Main.mainController.world.reset();
+                }
             }
         }
     }

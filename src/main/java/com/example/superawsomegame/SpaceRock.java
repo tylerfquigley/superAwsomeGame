@@ -6,7 +6,7 @@ public class SpaceRock extends Taz{
     SpaceRock(double x, double y, double w, double h,double scalar) {
         super(x, y, w, h);
         this.id=1;
-        speed=2;
+        speed=1;
         this.scalar=scalar;
         this.color="red";
        addPoint(0*scalar,10*scalar);
