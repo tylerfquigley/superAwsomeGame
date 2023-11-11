@@ -57,7 +57,7 @@ public class Ship extends Taz implements Controllable{
         runTimer();
         if (shoot){
             if (runTimer()){
-            Main.mainController.world.addGameObject(new Laser(x,y,10,20,this.rotation));
+            Main.mainController.world.addGameObject(new Laser(x+width/2,y+height/2,10,20,this.rotation));
             timer=200;
             }
         }
